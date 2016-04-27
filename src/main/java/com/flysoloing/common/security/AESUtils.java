@@ -1,6 +1,6 @@
 package com.flysoloing.common.security;
 
-import com.flysoloing.common.utils.GsonUtils;
+import com.flysoloing.common.util.GsonUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sun.misc.BASE64Decoder;

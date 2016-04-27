@@ -1,4 +1,4 @@
-package com.flysoloing.common.utils;
+package com.flysoloing.common.util;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

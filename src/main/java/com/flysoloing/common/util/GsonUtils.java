@@ -1,4 +1,4 @@
-package com.flysoloing.common.utils;
+package com.flysoloing.common.util;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
