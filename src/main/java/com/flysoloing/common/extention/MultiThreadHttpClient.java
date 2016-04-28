@@ -31,10 +31,10 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * <br>
- * User: flysoloing <br>
- * Date: 15-2-10 <br>
- * Time: 下午10:12
+ * 支持多线程请求的HttpClient工具类
+ *
+ * @author laitao
+ * @since 2015-02-10 22:12:00
  */
 public class MultiThreadHttpClient extends CloseableHttpClient implements DisposableBean, InitializingBean {
 

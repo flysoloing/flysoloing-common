@@ -7,10 +7,10 @@ import java.io.Reader;
 import java.lang.reflect.Type;
 
 /**
- * Gson工具类<br>
- * User: flysoloing <br>
- * Date: 15-3-6 <br>
- * Time: 上午12:48
+ * Gson工具类
+ *
+ * @author laitao
+ * @since 2015-03-06 12:48:00
  */
 public class GsonUtils {
 

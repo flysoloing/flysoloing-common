@@ -3,10 +3,10 @@ package com.flysoloing.common.pagination;
 import java.io.Serializable;
 
 /**
- * <br>
- * User: laitao<br>
- * Date: 15-3-18<br>
- * Time: 下午3:45<br>
+ * 分页体类
+ *
+ * @author laitao
+ * @since 2015-03-18 15:45:00
  */
 public class Pagination implements Serializable {
 

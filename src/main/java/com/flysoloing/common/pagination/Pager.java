@@ -1,10 +1,10 @@
 package com.flysoloing.common.pagination;
 
 /**
- * 分页包裹类<br>
- * User: laitao<br>
- * Date: 14-11-21<br>
- * Time: 下午4:50<br>
+ * 分页包裹类
+ *
+ * @author laitao
+ * @since 2014-11-21 16:50:00
  */
 public class Pager {
 

@@ -5,10 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * List类型返回结果类<br>
- * User: laitao<br>
- * Date: 15-3-18<br>
- * Time: 下午2:56<br>
+ * List类型返回结果类
+ *
+ * @author laitao
+ * @since 2015-03-18 14:56:00
  */
 public class ListResult<T> extends AbstractResult implements Serializable {
     private static final long serialVersionUID = -7450177725900417295L;

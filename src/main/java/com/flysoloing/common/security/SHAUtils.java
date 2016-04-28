@@ -3,10 +3,10 @@ package com.flysoloing.common.security;
 import org.apache.commons.codec.digest.DigestUtils;
 
 /**
- * 安全哈希算法工具类<br>
- * User: flysoloing <br>
- * Date: 14-5-3 <br>
- * Time: 下午11:21
+ * 安全哈希算法工具类
+ *
+ * @author laitao
+ * @since 2014-05-03 23:21:00
  */
 public class SHAUtils {
 

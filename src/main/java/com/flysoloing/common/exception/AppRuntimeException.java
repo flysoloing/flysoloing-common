@@ -5,10 +5,10 @@ import java.io.PrintStream;
 import java.util.Map;
 
 /**
- * 应用的运行时异常<br>
- * User: laitao <br>
- * Date: 13-11-10 <br>
- * Time: 下午7:09
+ * 应用的运行时异常
+ *
+ * @author laitao
+ * @since 2013-11-10 19:09:00
  */
 public class AppRuntimeException extends RuntimeException {
 

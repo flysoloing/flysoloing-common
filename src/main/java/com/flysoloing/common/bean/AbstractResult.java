@@ -1,10 +1,10 @@
 package com.flysoloing.common.bean;
 
 /**
- * 返回结果抽象类<br>
- * User: laitao<br>
- * Date: 15-3-18<br>
- * Time: 下午2:48<br>
+ * 返回结果抽象类
+ *
+ * @author laitao
+ * @since 2015-03-18 14:48:00
  */
 public abstract class AbstractResult {
 

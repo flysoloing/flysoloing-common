@@ -3,10 +3,10 @@ package com.flysoloing.common.bean;
 import java.io.Serializable;
 
 /**
- * 通用查询类<br>
- * User: laitao<br>
- * Date: 15-3-18<br>
- * Time: 下午3:57<br>
+ * 通用查询类
+ *
+ * @author laitao
+ * @since 2015-03-18 15:57:00
  */
 public class Query<T> implements Serializable {
     private static final long serialVersionUID = 4526451054574810264L;

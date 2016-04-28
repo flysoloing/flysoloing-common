@@ -6,10 +6,10 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * 抽奖工具类<br>
- * User: laitao<br>
- * Date: 15-3-24<br>
- * Time: 下午6:57<br>
+ * 抽奖工具类
+ *
+ * @author laitao
+ * @since 2015-03-24 18:57:00
  */
 public class RaffleUtils {
 

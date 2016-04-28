@@ -5,10 +5,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Map类型返回结果类<br>
- * User: laitao<br>
- * Date: 15-3-18<br>
- * Time: 下午3:03<br>
+ * Map类型返回结果类
+ *
+ * @author laitao
+ * @since 2015-03-18 15:03:00
  */
 public class MapResult<T> extends AbstractResult implements Serializable {
     private static final long serialVersionUID = -6735175977188647965L;

@@ -16,10 +16,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 高级加密标准算法工具类<br>
- * User: flysoloing <br>
- * Date: 15-3-6 <br>
- * Time: 下午10:31
+ * 高级加密标准算法工具类
+ *
+ * @author laitao
+ * @since 2015-03-06 22:31:00
  */
 public class AESUtils {
 
