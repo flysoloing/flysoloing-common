@@ -16,6 +16,7 @@ public class SHAUtils {
      * @return
      * @throws Exception
      */
+    @Deprecated
     public static byte[] encodeSHA(byte[] data) throws Exception {
         return DigestUtils.sha(data);
     }
@@ -26,6 +27,7 @@ public class SHAUtils {
      * @return
      * @throws Exception
      */
+    @Deprecated
     public static String encodeSHAHex(byte[] data) throws Exception {
         return DigestUtils.shaHex(data);
     }
