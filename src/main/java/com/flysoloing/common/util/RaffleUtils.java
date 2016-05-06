@@ -15,6 +15,7 @@ public class RaffleUtils {
 
     /**
      * 按照传入的抽奖中奖率抽奖，使用的是伪随机算法
+     *
      * @param raffleRates 抽奖商品中奖概率列表
      * @return -1：无法抽奖；<br>其他：对应的商品序号
      */

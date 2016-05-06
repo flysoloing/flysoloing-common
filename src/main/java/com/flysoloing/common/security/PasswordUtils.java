@@ -20,6 +20,7 @@ public class PasswordUtils {
 
     /**
      * 创建带有Salt值的Hash值
+     *
      * @param password 用户输入的密码明文
      * @return 安全哈希后的密码摘要
      * @throws Exception
@@ -30,6 +31,7 @@ public class PasswordUtils {
 
     /**
      * 创建带有Salt值的Hash值
+     *
      * @param password 用户输入的密码明文
      * @return 安全哈希后的密码摘要
      * @throws Exception
@@ -48,9 +50,10 @@ public class PasswordUtils {
 
     /**
      * 验证密码是否相等
+     *
      * @param password 用户输入的密码明文
      * @param correctHash 数据库存储的密码摘要
-     * @return
+     * @return true：相等；false：不等
      * @throws Exception
      */
     public static boolean validatePassword(String password, String correctHash) throws Exception {
@@ -59,9 +62,10 @@ public class PasswordUtils {
 
     /**
      * 验证密码是否相等
+     *
      * @param password 用户输入的密码明文
      * @param correctHash 数据库存储的密码摘要
-     * @return
+     * @return true：相等；false：不等
      * @throws Exception
      */
     public static boolean validatePassword(byte[] password, String correctHash) throws Exception {
@@ -76,9 +80,10 @@ public class PasswordUtils {
 
     /**
      * 合并字节数组
-     * @param bytes1
-     * @param bytes2
-     * @return
+     *
+     * @param bytes1 待合并字节数组1
+     * @param bytes2 待合并字节数组2
+     * @return 合并后的字节数组
      */
     public static byte[] mergeByteArray(byte[] bytes1, byte[] bytes2) {
         byte[] bytes3 = new byte[bytes1.length + bytes2.length];
@@ -87,6 +92,14 @@ public class PasswordUtils {
         return bytes3;
     }
 
+    /**
+     * 将字节数组转换为字符数组
+     *
+     * @param bytes 字节数组
+     * @return 字符数组
+     *
+     * @deprecated
+     */
     @Deprecated
     private static char[] getChars(byte[] bytes) {
         Charset cs = Charset.forName (CHARSET_UTF_8);

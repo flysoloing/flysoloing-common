@@ -10,11 +10,12 @@ public class PaginationUtils {
 
     /**
      * 根据分页条件得到分页对象
+     *
      * @param totalRecord 总记录条数
      * @param pageSize 每页记录数
      * @param currentIndex 当前页码
      * @param indexOffset 页面偏移量，例如：为2时，当前页面的前2和后2都显示
-     * @return
+     * @return 分页对象
      */
     public static Pager pagination(int totalRecord, int pageSize, int currentIndex, int indexOffset) {
         int totalPage = (totalRecord + pageSize - 1) / pageSize;
