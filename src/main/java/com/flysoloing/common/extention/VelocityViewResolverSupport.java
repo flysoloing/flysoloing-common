@@ -100,6 +100,7 @@ public class VelocityViewResolverSupport extends WebApplicationObjectSupport {
      * @param request HttpServletRequest对象
      * @param response HttpServletResponse对象
      * @return 渲染后页面字符串
+     * @throws Exception
      */
     public String render(String velocityConfigurerName, String templateName, Map<String, Object> model, HttpServletRequest request, HttpServletResponse response) throws Exception {
         WebApplicationContext webApplicationContext = getWebApplicationContext();
