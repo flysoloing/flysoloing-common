@@ -49,7 +49,7 @@ public class XMLUtils {
         return obj;
     }
 
-    public static String deWrapXmlDom(String dataXml) {
+    private static String deWrapXmlDom(String dataXml) {
         Document doc = null;
         try {
             doc = DocumentHelper.parseText(dataXml);
@@ -65,7 +65,7 @@ public class XMLUtils {
         return null;
     }
 
-    public static String wrapXmlDom (String xmlBody) {
+    private static String wrapXmlDom(String xmlBody) {
         StringBuilder xmlBuilder = new StringBuilder("<?xml version=\"1.0\" encoding=\"UTF-8\"?>").append(System.getProperty("line.separator"));
         xmlBuilder.append("<PackageList>").append(System.getProperty("line.separator"));
         xmlBuilder.append(xmlBody).append(System.getProperty("line.separator"));
