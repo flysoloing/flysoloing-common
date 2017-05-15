@@ -69,22 +69,18 @@ public class MultiThreadHttpClient extends CloseableHttpClient implements Dispos
         return httpClient.execute(target, request, context);
     }
 
-    @Override
     public void close() throws IOException {
         httpClient.close();
     }
 
-    @Override
     public HttpParams getParams() {
         return null;
     }
 
-    @Override
     public ClientConnectionManager getConnectionManager() {
         return null;
     }
 
-    @Override
     public void destroy() throws Exception {
         if (httpClient != null) {
             httpClient.close();
@@ -92,7 +88,6 @@ public class MultiThreadHttpClient extends CloseableHttpClient implements Dispos
         }
     }
 
-    @Override
     public void afterPropertiesSet() throws Exception {
         if (httpClient == null) {
 

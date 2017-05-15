@@ -5,6 +5,7 @@ import com.google.gson.GsonBuilder;
 
 import java.io.Reader;
 import java.lang.reflect.Type;
+import java.util.Date;
 
 /**
  * Gson工具类
@@ -17,6 +18,8 @@ public class GsonUtils {
     private static final Gson GSON = createGson(true);
 
     private static final Gson GSON_NO_NULLS = createGson(false);
+
+    private static final String DATE_PATTERN = "yyyy-MM-dd HH:mm:ss";
 
     /**
      * Create the standard {@link Gson} configuration
@@ -37,6 +40,7 @@ public class GsonUtils {
      */
     public static Gson createGson(final boolean serializeNulls) {
         final GsonBuilder builder = new GsonBuilder();
+        builder.setDateFormat(DATE_PATTERN);
         //移除注册日期类型适配器
         //builder.registerTypeAdapter(Date.class, new DateFormatter());
         //移除注册事件类型适配器
@@ -74,6 +78,9 @@ public class GsonUtils {
      * @return json string
      */
     public static String toJson(final Object object) {
+        if (object == null) {
+            return "{}";
+        }
         return toJson(object, true);
     }
 
@@ -132,5 +139,13 @@ public class GsonUtils {
      */
     public static <V> V fromJson(Reader reader, Type type) {
         return GSON.fromJson(reader, type);
+    }
+
+    public static void main(String[] args) {
+        Date date = new Date();
+        System.out.println(GsonUtils.toJson(date));
+
+        System.out.println(GsonUtils.toJson(null));
+
     }
 }
